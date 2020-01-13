@@ -13,6 +13,8 @@ attr_reader :id
  @name = name
  end
  
- 
+ def self.create_table
+   sql = CREATE TABE (id PRIMARY KEY INTEGER, name INTEGER, grade INTEGER)
+ end
 
 end
