@@ -15,7 +15,7 @@ attr_reader :id
  
  def self.create_table
    sql = "CREATE TABE (id PRIMARY KEY INTEGER, name TEXT, grade INTEGER);"
-   DB[:conn]
+   DB[:conn].execute(sql)
  end
 
 end
